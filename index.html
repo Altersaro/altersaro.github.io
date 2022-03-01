@@ -2,10 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.min.css">
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MyPortfolio</title>
+    <title>Rosario Luca Linguanti</title>
     <link rel="icon" type="image/x-icon" href="img/MyLogo.png">
   </head>
   <body>
@@ -37,14 +42,14 @@
       <!-- Presentazione -->
       <div class="container-fluid cover bg-image d-flex flex-column align-items-center justify-content-center" style="background-image:url(img/code2.jpg);">
         <div class="p-5 mt-5 rounded-3 d-flex flex-column align-items-center justify-content-center text-center text-white">
-         <h1 class="home-title ">I'm Rosario Luca Linguanti</h1>
-         <p class="lead ">Junior Full stack web developer</p>
-         <p><a href="#project"  class="btn btn-light btn-lg">See my projects</a></p>
+         <h1 class="home-title animate__animated animate__fadeInDown">I'm Rosario Luca Linguanti</h1>
+         <p class="lead animate__animated animate__fadeInDown">Junior Full stack web developer</p>
+         <div class="animate__animated animate__fadeInUp"><a href="#project"  class="btn btn-light btn-lg animate__animated animate__pulse animate__repeat-2 animate__delay-1s">See my projects</a></div>
        </div>
       </div>
 
       <!-- chi sono -->
-      <div class="pt-5 my-4 ancora" id="About"></div>
+      <div class="pt-5 my-5 ancora" id="About"></div>
       <div class="container presentation d-flex align-items-center flex-wrap" >
         <div class="row">
           <div class="col-sm-12 col-lg-9  ">
@@ -54,6 +59,17 @@
           <div class="col-sm-12 col-lg-2 offset-lg-1  d-flex justify-content-center avatar">
             <img class="rounded-circle z-depth-2 " alt="100x100" src="img/me.svg" height="200" width="200" data-holder-rendered="true">
           </div>
+        </div>
+      </div>
+
+      <!-- skill icons -->
+      <div class="container p-4 pb-0 d-flex justify-content-center ">
+          <section class="mb-4">
+              <img src="img/icon-html-5.svg" class="skill-icons"></img>
+              <img src="img/icons-css.svg" class="skill-icons"></img>
+              <img src="img/icons-bootstrap.svg" class="skill-icons"></img>
+              <img src="img/icon-sass.svg" class="skill-icons"></img>
+          </section>
         </div>
       </div>
 
@@ -69,7 +85,7 @@
                 <p class="card-text text-center text-dark">Rifacimento del design e della struttura del sito web turistico del borgo di Militello in Val di Catania</p>
               </div>
               <div class="card-footer d-flex justify-content-center">
-                <a href="#" class="btn btn-primary">View</a>
+                <a href="portfolio-project" class="btn btn-primary" target="_blank">View</a>
               </div>
             </div>
           </div>
@@ -96,12 +112,10 @@
             <h2 class=" mb-4">Contact me</h2>
             <p class=" text-center">Via Grotta Bianca 20 <br>
               95043-Militello in Val di Catania(CT)<br></p>
-            <span class=" my-4"><i class="bi bi-envelope-paper-fill me-2"></i>rosariolinguanti37@outlook.it</span>
-            <small class=""><i class="bi bi-phone-fill me-2"></i>(+39) 3275352953</small>
             <span class="my-4">
-            <a href="https://www.facebook.com/rosario.linguanti.5/" class="btn btn-light"><i class="bi bi-facebook icons"></i></a>
-            <a href="https://www.instagram.com/rosario_linguanti_/" class="btn btn-light"><i class="bi bi-instagram icons"></i></a>
-            <a href="https://github.com/Altersaro" class="btn btn-light"><i class="bi bi-github icons"></i></a>
+            <a href="https://www.facebook.com/rosario.linguanti.5/" class="btn btn-light" target="_blank"><i class="bi bi-facebook icons"></i></a>
+            <a href="https://www.instagram.com/rosario_linguanti_/" class="btn btn-light" target="_blank"><i class="bi bi-instagram icons"></i></a>
+            <a href="https://github.com/Altersaro" class="btn btn-light"><i class="bi bi-github icons" target="_blank"></i></a>
             </span>
           </div>
           <div class="col-sm-12 col-lg-4 offset-lg-1 ">
@@ -129,14 +143,16 @@
                       </label>
                   </div>
               </div>
-              <button type="submit" class="btn btn-light">Sign in</button>
+              <button type="submit" class="btn btn-light">Submit</button>
             </form>
           </div>
         </div>
       </div>
       <div class="p-3 my-3 footer-anchor d-none"></div>
-      <footer>
-        <small class="text-secondary">Rosario Luca Linguanti @ 2022 Copyright</small>
+      <footer class="text-center text-white mt-4">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2022 Copyright: Rosario Luca Linguanti
+        </div>
       </footer>
 
 
