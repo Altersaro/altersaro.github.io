@@ -64,7 +64,7 @@ body {
   transform: scale(1.2); }
 
 .project {
-  background-color: rgba 230, 224, 187;
+  background-color: #E6E0BB !important;
   color: black;
   border: none;
   transition: all 0.6s ease-in-out; }
