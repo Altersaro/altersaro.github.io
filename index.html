@@ -26,13 +26,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto ">
               <li class="nav-item mt-2 mx-2">
-                <a class="nav-link btn btn-primary text-light" aria-current="page" href="#About">About me</a>
+                <a class="nav-link btn btn-primary text-light navBtn" aria-current="page" href="#About">About me</a>
               </li>
               <li class="nav-item mt-2 mx-2 ">
-                <a class="nav-link btn btn-primary text-light" href="#project">Projects</a>
+                <a class="nav-link btn btn-primary text-light navBtn" href="#project">Projects</a>
               </li>
               <li class="nav-item mt-2 mx-2">
-                <a class="nav-link btn btn-primary text-light" href="#contacts">Contact</a>
+                <a class="nav-link btn btn-primary text-light navBtn" href="#contacts">Contact</a>
               </li>
             </ul>
           </div>
@@ -42,8 +42,8 @@
       <!-- Presentazione -->
       <div class="container-fluid cover bg-image d-flex flex-column align-items-center justify-content-center" style="background-image:url(img/code2.jpg);">
         <div class="p-5 mt-5 rounded-3 d-flex flex-column align-items-center justify-content-center text-center text-white">
-         <h1 class="home-title animate__animated animate__fadeInDown">I'm Rosario Luca Linguanti</h1>
-         <p class="lead animate__animated animate__fadeInDown">Junior Full stack web developer</p>
+         <h1 class="home-title animate__animated animate__fadeInDown ">I'm Rosario Luca Linguanti</h1>
+         <p class="lead  animate__animated animate__fadeInDown ">Junior Full stack web developer</p>
          <div class="animate__animated animate__fadeInUp"><a href="#project"  class="btn btn-light btn-lg animate__animated animate__pulse animate__repeat-2 animate__delay-1s">See my projects</a></div>
        </div>
       </div>
@@ -52,18 +52,16 @@
       <div class="pt-5 my-5 ancora" id="About"></div>
       <div class="container presentation d-flex align-items-center flex-wrap" >
         <div class="row">
-          <div class="col-sm-12 col-lg-9  ">
+          <div class="col-sm-12 col-lg-9 ">
             <p class="text-light text-uppercase">I am a junior full stack web developer, I love to create functional websites with impactful design that make the user experience rewarding and unique. My target audience is tourism, for which, thanks to my degree in tourism sciences, I can create a tourist site that makes your location, on the web, attractive and sought after. </p>
             <p class="text-light text-uppercase skill">i am currently familiar with html and css languages, including scss and bootstrap</p>
           </div>
-          <div class="col-sm-12 col-lg-2 offset-lg-1  d-flex justify-content-center avatar">
+          <div class="col-sm-12 col-lg-2 offset-lg-1  d-flex justify-content-center avatar ">
             <img class="rounded-circle z-depth-2 " alt="100x100" src="img/me.svg" height="200" width="200" data-holder-rendered="true">
           </div>
         </div>
-      </div>
-
-      <!-- skill icons -->
-      <div class="container p-4 pb-0 d-flex justify-content-center ">
+        <!-- icons -->
+        <div class="container p-4 pb-0 d-flex justify-content-center ">
           <section class="mb-4">
               <img src="img/icon-html-5.svg" class="skill-icons"></img>
               <img src="img/icons-css.svg" class="skill-icons"></img>
@@ -72,6 +70,8 @@
           </section>
         </div>
       </div>
+
+
 
       <!-- progetti -->
       <div class="p-5 my-4 ancora" id="project"></div>
@@ -82,7 +82,7 @@
               <img src="img/Web-page.png" class="card-img-top" alt="project">
               <div class="card-body d-flex justify-content-center flex-wrap">
                 <h5 class="card-title text-dark">Restyling Web </h5>
-                <p class="card-text text-center text-dark">Rifacimento del design e della struttura del sito web turistico del borgo di Militello in Val di Catania</p>
+                <p class="card-text text-center text-dark">Renovation of the design and structure of the tourist website of the village of Militello in Val di Catania</p>
               </div>
               <div class="card-footer d-flex justify-content-center">
                 <a href="portfolio-project" class="btn btn-primary" target="_blank">View</a>
@@ -108,33 +108,34 @@
       <div class="p-5 my-5 ancora" id="contacts"></div>
       <div class="container form clear-fix" >
         <div class="row text-light">
-          <div class="col-sm-12 col-lg-6 d-flex  flex-column align-items-center">
-            <h2 class=" mb-4">Contact me</h2>
-            <p class=" text-center">Via Grotta Bianca 20 <br>
+          <div class="col-sm-12 col-lg-6 d-flex  flex-column align-items-center justify-content-center">
+            <h2 class=" mb-4 contact-title">Contact me</h2>
+            <p class=" text-center contact-text">Via Grotta Bianca 20 <br>
               95043-Militello in Val di Catania(CT)<br></p>
+
             <span class="my-4">
             <a href="https://www.facebook.com/rosario.linguanti.5/" class="btn btn-light" target="_blank"><i class="bi bi-facebook icons"></i></a>
             <a href="https://www.instagram.com/rosario_linguanti_/" class="btn btn-light" target="_blank"><i class="bi bi-instagram icons"></i></a>
-            <a href="https://github.com/Altersaro" class="btn btn-light"><i class="bi bi-github icons" target="_blank"></i></a>
+            <a href="https://github.com/Altersaro" class="btn btn-light" target="_blank"><i class="bi bi-github icons"></i></a>
             </span>
           </div>
           <div class="col-sm-12 col-lg-4 offset-lg-1 ">
-            <form>
-              <div class="mb-3">
-                  <label class="form-label" for="inputName">Full Name</label>
+            <form  role="form" method="post" id="contact-form">
+              <div class="mb-3 form-group">
+                  <label class="form-label" for="inputName" name="FullName" >Full Name</label>
                   <input type="text" class="form-control" id="inputName" placeholder="Name and Surname">
               </div>
               <div class="mb-3">
-                  <label class="form-label " for="inputEmail">Email</label>
+                  <label class="form-label " for="inputEmail" name="Email" >Email</label>
                   <input type="email" class="form-control" id="inputEmail" placeholder="Email">
               </div>
               <div class="mb-3">
-                  <label class="form-label " for="inputObject">Object</label>
+                  <label class="form-label " for="inputObject" name="Object" >Object</label>
                   <input type="text" class="form-control" id="inputObject" placeholder="Object">
               </div>
               <div class="mb-3">
-                  <label class="form-label " for="inputMessage">Message</label>
-                  <textarea class="form-control" id="inputMessage" placeholder="Message" style="height:100px;"></textarea>
+                  <label class="form-label " for="inputMessage" name="Message" >Message</label>
+                  <textarea class="form-control" type="textarea" id="inputMessage" placeholder="Message" style="height:100px;"></textarea>
               </div>
               <div class="mb-3">
                   <div class="form-check">
@@ -145,15 +146,17 @@
               </div>
               <button type="submit" class="btn btn-light">Submit</button>
             </form>
+
+            </div>
           </div>
         </div>
-      </div>
       <div class="p-3 my-3 footer-anchor d-none"></div>
-      <footer class="text-center text-white mt-4">
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-          © 2022 Copyright: Rosario Luca Linguanti
-        </div>
-      </footer>
+
+    <footer class="text-center text-white mt-4">
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2022 Copyright: Rosario Luca Linguanti
+      </div>
+    </footer>
 
 
       <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="bi bi-arrow-up-circle-fill"></i></button>
@@ -173,9 +176,8 @@
 
 
 
-
-
-  <script src="js/bootstrap.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
   </body>
 </html>
